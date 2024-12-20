@@ -26,6 +26,37 @@ public class SteganoService {
         return new Integer[]{0,0};
     }
 
+    public String[] extrackMessage(File imageForExtractMessage, int messageLength){
+        byte [] imageData = null;
+        try {
+            imageData =  getImageByte(imageForExtractMessage);
+        } catch (InvalidReadImageException e) {
+            System.out.println(e.getMessage());
+            return new String[]{"0", ""};
+        }
+
+        int startIndex = imageData.length - messageLength;
+
+        byte[] messageData = extractMessageData(startIndex, messageLength, imageData);
+
+        String message = toStringFromByte(messageData);
+
+        return new String[]{"1", message};
+    }
+
+    byte[] extractMessageData(int starIndex, int messageLength, byte[] imageData){
+        byte [] messageData = new byte[messageLength];
+        for (int i = 0; i < messageLength; i++) {
+            messageData[i] = imageData[starIndex + i];
+        }
+        return messageData;
+
+    }
+
+    String toStringFromByte(byte[] data){
+        return new String(data);
+    }
+
     byte [] getImageByte(File file) throws InvalidReadImageException {
         byte [] data = iOimage.readImage(file);
         if(data == null || data.length == 0){
