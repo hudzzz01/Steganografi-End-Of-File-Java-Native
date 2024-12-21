@@ -1,4 +1,4 @@
-# 🔖 Program CRUD Contact
+# 🔖 Program Steganografi Java
 
 ~~ Muhamad Hudzaifah Assyahid. ~~ ✨
 - requerement :
@@ -30,7 +30,7 @@ ___
 
 - Output image tersemat pesan no 1  (hudzaifah assyahid):
 - ![Raw File 1](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/OutputImage/testing3.png?raw=true)
-- Output image tersemat pesan no 2 (Wonderfull of indonesua):
+- Output image tersemat pesan no 2 (Wonderfull of indonesia):
 - ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/OutputImage/testing2.png?raw=true)
 
 ---
