@@ -7,8 +7,8 @@ public class View {
     InputHandler inputHandler = new InputHandler(scanner);
     public Integer menu(){
         System.out.println("Selamat Datang Di program Steganografi By Hudzaifah");
-        System.out.println("1. Masukan pesan kedalam gambar");;
-        System.out.println("2. Ektrak pesan dari gambar");
+        System.out.println("1. Masukan pesan kedalam file");;
+        System.out.println("2. Ektrak pesan dari file");
         System.out.println("99. Keluar");
         System.out.println("Masukan pilihan kamu : ");
         return inputHandler.getInt("=> ");
@@ -17,13 +17,13 @@ public class View {
 
     public void hasil(Integer[] result, String namaFile){
         if(result[0] == 1) {
-            System.out.println("berhasil menyimpan pesan ke dalam gambar");
-            System.out.println("gambar tersimpan di folder OutputImage");
-            System.out.println("OutputImage/" + namaFile);
+            System.out.println("berhasil menyimpan pesan ke dalam file");
+            System.out.println("gambar tersimpan di folder OutputFile");
+            System.out.println("OutputFile/" + namaFile);
             System.out.println("Panjang pesan yang harus di ingat untuk mengambil pesan tersebut adalah " + result[1]);
             System.out.println("( ˶ˆᗜˆ˵ )");;
         }else{
-            System.out.println("gagal menyemapan pesan ke dalam gambar");
+            System.out.println("gagal menyemapan pesan ke dalam File");
         }
         System.out.println("___________________________");
         System.out.println();
@@ -46,16 +46,16 @@ public class View {
         return inputHandler.getInt("=> ");
     }
 
-    public String inputImageName(String inputAtauOutput, Boolean isInput){
-        System.out.println("gambar harus memiliki ekstensi .PNG");
+    public String inputFileName(String inputAtauOutput, Boolean isInput){
+        System.out.println("Masukan File beserta extensinya contoh : gambar.png | gambar.jpg | video.mp4 | audio.mp3 | etc");
         if(isInput){
-            System.out.println("Masukan gambar kedalam folder InputImage!!!");
+            System.out.println("Masukan gambar kedalam folder InputFile!!!");
         }else{
-            System.out.println("Masukan gambar kedalam folder imageForExtractMessage!!!");
+            System.out.println("Masukan gambar kedalam folder fileForExtractMessage!!!");
 
         }
-        System.out.println("kemudian masukan nama gambarnya beserta formatnya contoh : gambar.png");
-        return inputHandler.getString("Masukan nama gambar" + inputAtauOutput + " : ");
+        System.out.println("kemudian masukan nama file contoh : gambar.png | video.mp4");
+        return inputHandler.getString("Masukan nama file" + inputAtauOutput + " : ");
     }
 
     public String inputMessage(){
