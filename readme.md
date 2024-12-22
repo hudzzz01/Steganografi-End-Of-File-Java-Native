@@ -36,10 +36,10 @@ Program ini memiliki fitur :
 
 ---
 - Output image tersemat pesan no 1  (hudzaifah assyahid):
-- ![Raw File 1](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/OutputImage/testing3.png?raw=true)
+- ![Raw File 1](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/OutputFile/testing3.png?raw=true)
 - --
 - Output image tersemat pesan no 2 (Wonderfull of indonesia):
-- ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/OutputImage/testing2.png?raw=true)
+- ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/OutputFile/testing2.png?raw=true)
 - --
 - Output video tersemat pesan no 3 (love is magic !):
 - [![Watch the video](https://drive.google.com/uc?id=1C-Qka7JEvlcAfi6wMJ_h0xIOgMA_sCu7)](https://drive.google.com/uc?id=1cm7mH3PTkdvH_gd68nsNGZ2i-OFvBopy)
