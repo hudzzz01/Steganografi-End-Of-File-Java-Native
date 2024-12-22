@@ -12,6 +12,9 @@ ___
 - javac Main.java
 - java Main
 - -- 
+Program ini memiliki fitur :
+1. Masukan pesan kedalam file // 1. insert messege to file
+2. Ektrak pesan dari file // extract messege from file
 
 - 🔎  If u wanna insert text to file u must place the image in folder InputFile, and it will be out in folder OutputFile.
 - 🔎 if u wanna extract text from image u must place the image in folder fileForExtractMessage
@@ -23,8 +26,6 @@ ___
 - o895-3669-75992
 - linkedin [muhammad hudzaifah assyahid](https://www.linkedin.com/in/hudzaifahassyahid/)
 
-# Thanks
----
 
 # Lampiran :
 | no | Nama File | panjang byte kunci | isi pesan               |
@@ -41,8 +42,10 @@ ___
 - ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/OutputImage/testing2.png?raw=true)
 - --
 - Output video tersemat pesan no 3 (love is magic !):
-- [Raw File 3](https://drive.google.com/file/d/1cm7mH3PTkdvH_gd68nsNGZ2i-OFvBopy/view?usp=sharing)
----
 - [![Watch the video](https://drive.google.com/uc?id=1C-Qka7JEvlcAfi6wMJ_h0xIOgMA_sCu7)](https://drive.google.com/uc?id=1cm7mH3PTkdvH_gd68nsNGZ2i-OFvBopy)
+---
+- cuplikan program saat di jalankan :
+- - ![Screen Shoot](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/cuplikan.png?raw=true)
 
-
+# Thanks
+---
