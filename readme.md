@@ -29,9 +29,9 @@ ___
 | 2  | testing2.png | 23        | Wonderfull of indonesia |
 
 - Output image tersemat pesan no 1  (hudzaifah assyahid):
-- ![Raw File 1](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/OutputImage/testing3.png?raw=true)
+- ![Raw File 1](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/01-Bash-stegano-image-with-string-message-ande-png-image/OutputImage/testing3.png?raw=true)
 - Output image tersemat pesan no 2 (Wonderfull of indonesia):
-- ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/OutputImage/testing2.png?raw=true)
+- ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/01-Bash-stegano-image-with-string-message-ande-png-image/OutputImage/testing2.png?raw=true)
 
 ---
 - ![Screen Shoot](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/cuplikan.png?raw=true)
