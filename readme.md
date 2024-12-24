@@ -8,7 +8,7 @@
 ___ 
 # How to run :
 - Clone this repo git clone
-- goto src folder
+- goto src folder !
 - javac Main.java
 - java Main
 - If u wanna insert text to image u must place the image in folder InputImage
