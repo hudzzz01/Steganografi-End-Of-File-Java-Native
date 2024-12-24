@@ -1,6 +1,6 @@
 # 🔖 Program Steganografi Java
 
-~~ Muhamad Hudzaifah Assyahid. ~~ ✨
+~~ Muhamad Hudzaifah Assyahid. ~~~ ✨
 - requerement :
 - java 17.13
 - format File bebas * namun yang sudah saya testing .jpg .png .mp4
