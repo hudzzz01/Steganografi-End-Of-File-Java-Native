@@ -9,39 +9,54 @@ import java.nio.file.Path;
 public class SteganoService {
     IOFile IOFile = new IOFile();
 
-    public Integer[] stegano(String message, File inputImage){
-        String output = "OutputFile/" + inputImage.getName();
+    public Integer[] stegano( File inputFileReceptacle, File inputSecretFile){
+        String output = "OutputFile/" + inputFileReceptacle.getName();
         Path outputPath = Path.of(output);
-        File outputImage = outputPath.toFile();
-        byte [] imageByte = null;
+        File outputFile = outputPath.toFile();
+        byte [] fileReceptacleByte = null;
         try {
-            imageByte = getImageByte(inputImage);
+            fileReceptacleByte = getImageByte(inputFileReceptacle);
         } catch (InvalidReadImageException e) {
             System.out.println(e.getMessage());
             return new Integer[]{0,0};
         }
-        byte [] messageByte = getMessageByte(message);
-        byte [] newData = combineByte(imageByte, messageByte);
-        if(writeByteToFile(newData, outputImage)) return new Integer[]{1, messageByte.length};
+        
+        //message section
+        byte [] fileSecretByte = null;
+        try {
+            fileSecretByte = getImageByte(inputSecretFile);
+        } catch (InvalidReadImageException e) {
+            System.out.println(e.getMessage());
+            return new Integer[]{0,0};
+        }
+
+
+        byte [] newData = combineByte(fileReceptacleByte, fileSecretByte);
+        if(writeByteToFile(newData, outputFile)) return new Integer[]{1, fileSecretByte.length};
         return new Integer[]{0,0};
     }
 
-    public String[] extrackMessage(File imageForExtractMessage, int messageLength){
-        byte [] imageData = null;
+    public Integer[] extrackMessage(File fileForExtractMessage, int messageLength, String extension){
+        byte [] fileData = null;
         try {
-            imageData =  getImageByte(imageForExtractMessage);
+            fileData =  getImageByte(fileForExtractMessage);
         } catch (InvalidReadImageException e) {
             System.out.println(e.getMessage());
-            return new String[]{"0", ""};
+            return new Integer[]{0,0};
         }
 
-        int startIndex = imageData.length - messageLength;
+        int startIndex = fileData.length - messageLength;
 
-        byte[] messageData = extractMessageData(startIndex, messageLength, imageData);
+        byte[] messageDataByte = extractMessageData(startIndex, messageLength, fileData);
 
-        String message = toStringFromByte(messageData);
+        //message section
+        String output = "OutputMessage/" + "secretMessage." + extension;
+        Path outputPath = Path.of(output);
+        File outputFile = outputPath.toFile();
+        if(writeByteToFile(messageDataByte, outputFile)) return new Integer[]{1, fileData.length};
 
-        return new String[]{"1", message};
+
+        return new Integer[]{0, 0};
     }
 
     byte[] extractMessageData(int starIndex, int messageLength, byte[] imageData){

@@ -15,11 +15,16 @@ public class View {
 
     }
 
-    public void hasil(Integer[] result, String namaFile){
+    public void hasil(Integer[] result, String namaFile, String type){
         if(result[0] == 1) {
             System.out.println("berhasil menyimpan pesan ke dalam file");
-            System.out.println("gambar tersimpan di folder OutputFile");
-            System.out.println("OutputFile/" + namaFile);
+            if(type.equals("secret")){
+                System.out.println("gambar tersimpan di folder OutputMessage");
+                System.out.println("OutputMessage/" + namaFile);
+            }else {
+                System.out.println("gambar tersimpan di folder OutputFile");
+                System.out.println("OutputFile/" + namaFile);
+            }
             System.out.println("Panjang pesan yang harus di ingat untuk mengambil pesan tersebut adalah " + result[1]);
             System.out.println("( ˶ˆᗜˆ˵ )");;
         }else{
@@ -50,15 +55,33 @@ public class View {
         System.out.println("Masukan File beserta extensinya contoh : gambar.png | gambar.jpg | video.mp4 | audio.mp3 | etc");
         if(isInput){
             System.out.println("Masukan gambar kedalam folder InputFile!!!");
-        }else{
+        }
+        else{
             System.out.println("Masukan gambar kedalam folder fileForExtractMessage!!!");
-
         }
         System.out.println("kemudian masukan nama file contoh : gambar.png | video.mp4");
         return inputHandler.getString("Masukan nama file" + inputAtauOutput + " : ");
     }
 
+    public String inputSecretFileName(String inputAtauOutput, Boolean isInput){
+        System.out.println("Masukan File beserta extensinya contoh : gambar.png | gambar.jpg | video.mp4 | audio.mp3 | etc");
+        if(isInput){
+            System.out.println("Masukan file kedalam folder InputSecretFile!!!");
+        }
+//        else{
+//            System.out.println("Masukan gambar kedalam folder fileForExtractMessage!!!");
+//        }
+        System.out.println("kemudian masukan nama file contoh : gambar.png | video.mp4");
+        return inputHandler.getString("Masukan nama file" + inputAtauOutput + " : ");
+    }
+
+
     public String inputMessage(){
         return inputHandler.getString("Masukan pesan : ");
     }
+    public String inputExtension(){
+        System.out.println("contoh jpg png mp4 tidak mengunakan titik");
+        return inputHandler.getString("Masukan extensi output file : ");
+    }
+
 }

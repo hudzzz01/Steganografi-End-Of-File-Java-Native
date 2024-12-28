@@ -17,21 +17,28 @@ public class Main {
             if (pilihan == 1){
                 //stegano
                 String inputFileName = view.inputFileName("Input File : ",true);
-                String message = view.inputMessage();
+                String secretFileName = view.inputSecretFileName("input",true);
 
                 Path inputFilePath = Path.of("InputFile/" + inputFileName);
                 File inputFile = inputFilePath.toFile();
-                Integer[] result = steganoService.stegano(message, inputFile);
-                view.hasil(result,inputFile.getName());
+
+                Path inputSecretFilePath = Path.of("InputSecretFile/" + secretFileName);
+                File inputSecretFile = inputSecretFilePath.toFile();
+
+                Integer[] result = steganoService.stegano(inputFile,inputSecretFile);
+                view.hasil(result,inputFile.getName(),"");
 
             }else if (pilihan == 2){
                 //extract
-                String inputFileName = view.inputFileName(" File yang memiliki pesan rahasia : ",false);
+                String inputFileName = view.inputFileName("yang memiliki pesan rahasia : ",false);
                 Integer lengthMessage = view.inputLenghtByteMessage();
                 Path inputFilePath = Path.of("fileForExtractMessage/" + inputFileName);
                 File inputFile = inputFilePath.toFile();
-                String[] result = steganoService.extrackMessage(inputFile, lengthMessage);
-                view.hasil(result);
+
+                String outputFileExtension = view.inputExtension();
+
+                Integer[] result = steganoService.extrackMessage(inputFile, lengthMessage,outputFileExtension);
+                view.hasil(result,inputFileName,"secret");
             }
         }
 
