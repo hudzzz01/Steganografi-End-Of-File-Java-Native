@@ -13,11 +13,9 @@ ___
 - java Main
 - -- 
 Program ini memiliki fitur :
-1. Masukan pesan kedalam file // 1. insert messege to file
-2. Ektrak pesan dari file // extract messege from file
+1. Masukan file rahasia kedalam file // 1. insert secret file to file
+2. Ektrak file rahasia dari dalam file // extract secret file from file
 
-- 🔎  If u wanna insert text to file u must place the image in folder InputFile, and it will be out in folder OutputFile.
-- 🔎 if u wanna extract text from image u must place the image in folder fileForExtractMessage
 
 ---
 
