@@ -42,7 +42,7 @@ Program ini memiliki fitur :
 - ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/03-bash-steganografi-insert-secretFile-in-file/fileForExtractMessage/testing2.png?raw=true)
 - --
 - Output video tersemat pesan no 3 (love is magic !):
-- ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/03-bash-steganografi-insert-secretFile-in-file/fileForExtractMessage/testing2.png?raw=true)
+- ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/03-bash-steganografi-insert-secretFile-in-file/OutputMessage/secretMessage.jpeg?raw=true)
 ---
 - cuplikan program saat di jalankan :
 - - ![Screen Shoot](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/cuplikan.png?raw=true)
