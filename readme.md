@@ -28,21 +28,21 @@ Program ini memiliki fitur :
 
 
 # Lampiran :
-| no | Nama File | panjang byte kunci | isi pesan               |
-|----|-----------|--------------------|-------------------------|
-| 1  | testing3.png | 18                 | hudzaifah assyahid      |
-| 2  | testing2.png | 23                 | Wonderfull of indonesia |
-|3| video1.mp4 | 15                 | love is magic !          |
+| no | Nama File | panjang byte kunci | isi pesan  |
+|----|-----------|--------------|------------|
+| 1  | testing3.png | 7893329             | a.jpeg     |
+| 2  | testing2.png | 325863             | video1.mp4 |
+|3| video1.mp4 | 325863             | a.jpeg     |
 
 ---
 - Output image tersemat pesan no 1  (hudzaifah assyahid):
-- ![Raw File 1](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/OutputFile/testing3.png?raw=true)
+- ![Raw File 1](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/03-bash-steganografi-insert-secretFile-in-file/fileForExtractMessage/testing3.png?raw=true)
 - --
 - Output image tersemat pesan no 2 (Wonderfull of indonesia):
-- ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/OutputFile/testing2.png?raw=true)
+- ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/03-bash-steganografi-insert-secretFile-in-file/fileForExtractMessage/testing2.png?raw=true)
 - --
 - Output video tersemat pesan no 3 (love is magic !):
-- [![Watch the video](https://drive.google.com/uc?id=1C-Qka7JEvlcAfi6wMJ_h0xIOgMA_sCu7)](https://drive.google.com/uc?id=1cm7mH3PTkdvH_gd68nsNGZ2i-OFvBopy)
+- ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/03-bash-steganografi-insert-secretFile-in-file/fileForExtractMessage/testing2.png?raw=true)
 ---
 - cuplikan program saat di jalankan :
 - - ![Screen Shoot](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/master/cuplikan.png?raw=true)
