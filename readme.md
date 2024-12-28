@@ -35,13 +35,13 @@ Program ini memiliki fitur :
 |3| video1.mp4 | 325863             | a.jpeg     |
 
 ---
-- Output image tersemat pesan no 1  (hudzaifah assyahid):
+- Output image tersemat pesan no 1
 - ![Raw File 1](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/03-bash-steganografi-insert-secretFile-in-file/fileForExtractMessage/testing3.png?raw=true)
 - --
-- Output image tersemat pesan no 2 (Wonderfull of indonesia):
+- Output image tersemat pesan no 2
 - ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/03-bash-steganografi-insert-secretFile-in-file/fileForExtractMessage/testing2.png?raw=true)
 - --
-- Output video tersemat pesan no 3 (love is magic !):
+- Pesan Image tersemat pesan no 3
 - ![Raw File 2](https://github.com/hudzzz01/Steganografi-End-Of-File-Java-Native/blob/03-bash-steganografi-insert-secretFile-in-file/OutputMessage/secretMessage.jpeg?raw=true)
 ---
 - cuplikan program saat di jalankan :
